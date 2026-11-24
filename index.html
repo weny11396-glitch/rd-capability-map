@@ -1,0 +1,229 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研发能力地图 · 公司人才导向</title><style>
+*{box-sizing:border-box}html{scroll-padding:24px}body{margin:0;background:#f7f8f4;color:#182d33;font:16px/1.85 "Microsoft YaHei",system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:46px clamp(16px,5vw,70px) 80px}header{border-top:5px solid #1b655b;padding:24px 0 12px}h1{font-size:clamp(32px,5vw,58px);letter-spacing:-.055em;margin:0}h2{font-size:clamp(21px,3vw,30px);line-height:1.55;margin:0 0 16px}p{margin:0 0 13px}header p{font-size:19px;max-width:44em}.scope{border-left:3px solid #79a896;padding:3px 20px;margin:8px 0 30px}.scope h2{font-size:18px;margin:0 0 5px}.scope p{margin:0}.map{background:#133e3c;color:white;border-radius:20px;padding:22px clamp(12px,3vw,32px) 30px}.map p{font-size:14px;color:#d4e7df}.graph{position:relative;display:grid;grid-template-columns:1fr .85fr 1fr;grid-template-rows:repeat(3,auto);gap:14px 4%;align-items:center}.graph:before{content:"";position:absolute;inset:16% 22%;background:linear-gradient(to top right,transparent 49.6%,#709b91 50%,transparent 50.4%),linear-gradient(to bottom right,transparent 49.6%,#709b91 50%,transparent 50.4%),linear-gradient(transparent 49.6%,#709b91 50%,transparent 50.4%)}.hub,.node{position:relative;text-align:center;border-radius:12px}.hub{grid-area:2/2;background:#133e3c;border:1px solid #80b7a4;padding:10px 4px}.node{background:#e0eee7;color:#123e38;text-decoration:none;padding:9px 4px;line-height:1.5}.node:hover,.node:focus-visible{background:#fff1c5;outline:2px solid #c38b37}.node span{display:block;font-size:13px}.node b{font-size:clamp(13px,2vw,19px)}article{border-bottom:1px solid #cdd9d2;padding:38px 0 28px;scroll-margin-top:12px}article:target h2{color:#176b5f}.back{font-size:14px;color:#336c62}.self{background:#e6efe8;border-radius:8px;padding:12px 16px;margin:16px 0}.self b{margin-right:12px;color:#215d52}@media(max-width:560px){main{padding-top:16px}.graph{grid-template-columns:1fr .6fr 1fr;column-gap:2%}.hub{font-size:12px}.node span{font-size:11px}.map{padding:14px 8px}.scope{padding-left:12px}article{padding:26px 0}}@media print{.map,.back{display:none}main{padding:0}h2{break-after:avoid}}
+</style><style>.practice{border-left:3px solid #80b7a4;background:#edf4ee;padding:9px 16px;margin:-4px 0 20px}.practice summary{color:#175c51;cursor:pointer;font-weight:600}.practice p{margin:10px 0 2px}</style><style>.scorecard{margin-top:22px}.scorecard>h3{font-size:25px;margin-bottom:8px}.scorehead{background:#174b46;color:white;border-radius:14px;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}.scorehead small{font-size:14px}.bigscore{font:700 clamp(38px,8vw,66px)/1.1 system-ui;font-variant-numeric:tabular-nums}.bigscore small{font-weight:400}.scorehead p{font-size:14px;margin:0}.scorecard h4{margin:18px 0 6px}.barrow{display:grid;grid-template-columns:minmax(7em,auto) 1fr 4em;gap:12px;align-items:center;color:#153e39;text-decoration:none;padding:7px 0}.barrow:hover span:first-child{text-decoration:underline}.barrow strong{text-align:right}.track{height:12px;background:#e3eae5;border-radius:8px;overflow:hidden}.track i{display:block;height:100%;background:#24786a;border-radius:8px}.scorenote{font-size:13px;color:#52665e}.priority{padding:10px 14px;background:#f5efda;border-radius:8px}.scoredetail{border-top:1px solid #d5dfda;padding:12px 0}.scoredetail summary{cursor:pointer;font-weight:650}.scoredetail>p{margin-top:12px}.scorecard #review{margin-top:12px}@media(max-width:540px){.barrow{font-size:14px;gap:6px;grid-template-columns:7em 1fr 3.6em}.scorehead{padding:16px}}</style>
+<style>button.barrow{width:100%;font:inherit;text-align:left;align-items:center;border:0;background:transparent;border-radius:7px;padding:8px;cursor:pointer}button.barrow[aria-pressed=true]{background:#e7f2eb}.scorecard h4 small{font-size:13px;font-weight:400;color:#53665d}.insight{margin:20px 0 12px;background:#f4f7f2;padding:18px clamp(12px,3vw,26px);border-radius:12px}.insight h4{margin:0;font-size:20px}.insight h5{margin:14px 0 2px;font-size:14px;color:#285d51}.insight p{max-width:44em;margin:0}.insight .verdict{font-size:17px;margin:3px 0 10px}.scoremethod,.answerlist{font-size:14px}.answerlist{margin-top:18px;border-top:1px solid #d4ded7;padding-top:8px}.answerlist summary,.scoremethod summary{cursor:pointer;color:#395a51}.answerlist ul{list-style:none;padding:0}.answerlist li{display:grid;grid-template-columns:6em 1fr;gap:8px;margin:8px 0}.scoremethod p{max-width:46em}</style><style>.growth{margin:22px 0}.growthrow{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:white;border:0;border-bottom:1px solid #d4ded7;padding:8px;cursor:pointer}.growthrow:hover{background:#f2f6f1}.growthrow small{display:block;color:#4e6259}.growthrow em,.stepguide small{font:500 13px/1.5 inherit;font-size:13px;font-style:normal;color:#664b1a;background:#fbf0d8;padding:2px 7px;border-radius:5px}.stepguide{padding:12px 0;border-top:1px solid #d8e2d9}.stepguide h5{margin:0 0 4px;font-size:17px}.stepguide p+p{margin-top:6px}.stepguide b{font-size:14px}</style></head><body><main><header><h1>研发能力地图</h1><p>公司需要有专业深度、能判断业务价值、能承担完整交付、能借助 AI 提高产出，并能在所承担的职责范围内带动团队的人。</p></header>
+<section class="scope"><h2>结合自己的职责阅读</h2><p>在本职范围内，独立、可靠地完成交付。负责复杂问题时，主导问题解决、承担跨模块交付并指导他人。承担方向决策和团队协作责任时，在授权范围内判断方向与方案，建立专业方法和协作机制，把个人经验转化为团队或跨团队的整体贡献。</p></section>
+<nav class="map" id="map" aria-label="六项人才导向"><p>点图查看对应标准，也可以向下顺序阅读全文。</p><div class="graph"><strong class="hub">一次研发任务</strong><a class="node" style="grid-area:1/1" href="#value"><b>判断业务价值</b><span>主动完善方案</span></a><a class="node" style="grid-area:1/3" href="#delivery"><b>承担完整交付</b><span>衔接上下游</span></a><a class="node" style="grid-area:2/1" href="#ai"><b>把 AI 融入工作</b><span>核验输出并负责</span></a><a class="node" style="grid-area:2/3" href="#quality"><b>把住质量与风险</b><span>作出关键专业判断</span></a><a class="node" style="grid-area:3/1" href="#improve"><b>交付后持续改进</b><span>用反馈决定下一步</span></a><a class="node" style="grid-area:3/3" href="#team"><b>扩大团队能力</b><span>让方法被持续采用</span></a></div></nav><style>
+.checkboxarea{background:white;border:1px solid #b4cbc0;border-radius:16px;padding:20px clamp(14px,3vw,30px);margin:24px 0}.checkboxarea select,.checkbtn,.choice{font:inherit}.checkbtn{display:inline-block;background:#175c51;color:white;border:0;border-radius:7px;padding:7px 15px;cursor:pointer;text-decoration:none}.checkboxarea select{max-width:100%;padding:5px;margin:0 8px 8px 0}.checkboxarea fieldset{border:0;border-top:1px solid #d4e0d8;margin:14px 0;padding:10px 0}.checkboxarea legend{font-weight:600}.choice{display:inline-flex;align-items:center;gap:4px;background:#edf3ef;margin:4px;padding:5px 9px;border-radius:6px;cursor:pointer}.choice:has(input:checked){background:#cae4d5}.checkboxarea h3{color:#215d52}.checkbtn:focus-visible{outline:3px solid orange}
+</style>
+
+<article id="value"><h2>需要能判断价值、主动完善方案的人，不满足于按要求执行</h2><p>业务价值判断已经进入多个序列的能力要求。研发要理解需求为什么做，能否用更合适的成本实现目标；测试要判断规则有没有漏洞、真实用户场景是否完整；运营要判断哪些动作能改变用户行为；产品要识别需求真伪和优先级。</p><p>应在职责范围内理解问题、比较方案，发现逻辑漏洞、边界缺失或投入不合理时，提出有依据的建议并推动调整。承担方向决策责任的人，还应在相应职责和授权范围内承担方向判断、资源取舍，以及必要的调整或止损责任。</p><p>公司需要能帮助业务作出更好选择的人。只看任务是否按要求完成，已经不足以评价业务判断能力；还要看是否理解目标、识别问题，并对方案作出有价值的补充或取舍。业务价值不限于收入，也包括解决客户问题、改善使用体验、降低交付成本、保障资金安全和业务稳定。</p><aside class="self"><b>自查题</b>我最近一次提出调整方案时，依据是什么？这次调整为谁解决了什么问题？</aside><a class="back" href="#map">↑ 返回能力地图</a></article>
+<article id="delivery"><h2>需要能承担完整交付、主动跨界协作的人，不满足于完成自己的一个环节</h2><p>研发要拓宽前后端及相关交付能力，按所承担的职责对模块或产品区域负起全链路责任；产品要参与验证、实现衔接、验收和客户使用；测试要逐步前移到需求与设计阶段，提前识别风险、完善方案。</p><p>共同方向是减少岗位交接中的等待和信息损耗，提高解决完整问题的能力。要围绕所负责的目标理解上下游、处理依赖、推动协作，并跟进交付结果。</p><p>仅完成自己负责的步骤，不能替代对所承担目标的完整交付责任。应具备衔接上下游和推动问题解决的能力；负责范围内的问题不能因交接而无人跟进。</p><aside class="self"><b>自查题</b>最近一次交付最容易卡在哪个交接点？我怎样让问题有人跟进，直到验收？</aside><a class="back" href="#map">↑ 返回能力地图</a></article>
+<article id="ai"><h2>需要能把 AI 融入工作、对结果负责的人，不满足于仅使用工具或追求生成数量</h2><p>AI 协作能力要体现在适用任务的效率、质量和交付能力上，评价重点是实际作用，而非工具数量、使用频次或生成内容的数量。要能判断 AI 的适用范围，提供必要背景与约束，核验输出、修正错误，并对最终结果负责。</p><p>承担流程设计和推广职责的人，还要能设计稳定的人机协作流程，明确自动校验、异常处理和人工接管方式，并按岗位要求带动团队采用。</p><p>需要避免的工作方式，是将 AI 输出直接当成可靠结论，或仅以生成了多少代码、文档、图片和用例来评价成果。承担团队推广职责时，还要看相关做法是否被团队持续采用，以及是否改善了对应标准要求的效率或工作结果。</p><aside class="self"><b>自查题</b>上次让 AI 参与交付时，我核验了什么？什么情况下需要由人接手？</aside><a class="back" href="#map">↑ 返回能力地图</a></article>
+<article id="quality"><h2>需要专业扎实、能把住质量和风险的人，不满足于功能跑通或流程完成</h2><p>使用 AI 仍需要扎实的专业基础。应能判断方案和输出是否合理，识别隐性问题，处理异常并保障交付质量。</p><p>研发要能识别代码和架构中的隐患，处理性能、安全和稳定性问题；测试要验证真实业务结果，提前发现规则与异常场景的问题；算法人员要能判断模型效果、成本和部署约束；运维要能从业务影响出发保障服务，而不仅是处理告警。</p><p>拓宽能力边界要建立在专业深度之上。公司既需要能跨环节交付的人，也需要能攻克底层难题、作出关键专业判断的人。只把功能做出来、把流程走完，却未在职责范围内处理质量隐患和交付风险，不能满足相应岗位的要求。</p><aside class="self"><b>自查题</b>功能跑通以后，还有哪个风险可能影响真实用户？我做了什么验证？</aside><a class="back" href="#map">↑ 返回能力地图</a></article>
+<article id="improve"><h2>需要交付后持续改进的人，不满足于上线或阶段性完成</h2><p>承担相应交付责任的人，要继续关注上线后的使用、运行和业务反馈。交付完成后，能够发现遗留问题、判断改进重点并推动调整，是从完成任务走向持续负责的重要体现。需要结合岗位关注：用户是否真正使用，遇到了什么障碍，运行是否稳定，原有问题是否减少。数据和反馈应进入判断与改进行动，而不只用于汇报运行规模或记录问题。</p><p>要把发现问题、作出判断、实施改进、检查结果连起来。对探索中的项目，应根据阶段目标验证方向；承担决策责任的人要判断继续投入、调整做法还是停止，不能只用上线数量或投入时长衡量贡献。</p><aside class="self"><b>自查题</b>上线后的哪条反馈改变了我的判断？改动之后，我怎样确认原来的问题有所改善？</aside><a class="back" href="#map">↑ 返回能力地图</a></article>
+<article id="team"><h2>需要能把个人经验转化为团队能力的人，不满足于只有个人产出</h2><p>承担专业指导职责的人，既要有独立解决复杂问题的能力，也要按岗位要求指导他人、沉淀方法，减少团队反复解决同类问题。随着职责范围扩大，贡献也应从个人负责的工作，扩展到团队乃至跨团队的持续交付能力。</p><p>个人经验可以转化为其他成员能够沿用的业务规则、工具、流程或专业方法。应看这些成果是否被实际采用、能否持续使用，并产生相应作用；仅有文档、一次分享或工具建成，不能直接等同于团队能力已提升。</p><p>承担这类职责时，贡献应同时体现专业深度、关键问题解决和相应范围的团队带动。个人完成项目多、技术难度高或效率好，只体现其中一部分要求。团队建设也不能统一理解为带人管理，专业人才同样可以通过技术体系、共用能力和专业指导扩大贡献。</p><aside class="self"><b>自查题</b>谁在另一次任务中独立沿用了我的方法？有什么迹象说明它持续改善了团队的工作？</aside><a class="back" href="#map">↑ 返回能力地图</a></article><section id="quick" class="checkboxarea"><div id="startArea"><p>共六项能力，18 道题。完成后可查看自己的能力体检单。</p><button id="startCheck" type="button" class="checkbtn">自查一下自己</button></div><div id="checkwork" aria-live="polite"></div></section>
+<script>
+const checks=[["value","判断业务价值",["我能具体说明这项需求要解决谁的问题，以及判断它是否值得做的依据。","我比较过可行方案的成本、收益或风险，并能说明我的建议怎样影响了最终选择。","我在授权范围内做过投入、调整或止损的决定，并能说明依据。"],["找出一条用户反馈或业务数据，写清需求目标。","在下次方案评审中列出备选做法、代价和选择理由。","在下一次资源决策时记录继续或停止投入的条件。"]],["delivery","承担完整交付",["我明确了交付目标、验收条件和上下游依赖。","我跟进过交接中的问题，并用验收或实际使用结果确认目标达成。","我负责跨模块交付时，明确过依赖方、责任人及共同验收方式。"],["与上下游确认验收条件和依赖清单。","回到原使用场景验证结果，记录遗留问题由谁跟进。","与各模块约定同一套验收条件和依赖处理方式。"]],["ai","把 AI 融入工作",["我能解释为什么这个环节适合用 AI、给了哪些约束，以及它对效率或质量的实际作用。","我用独立依据核验了 AI 的输出，知道何时修正或人工接手。","我设计过可重复使用的人机协作流程，并检查了团队采用后的效果。"],["选一项适用任务，记录使用 AI 前后的投入与质量。","明确校验规则，并用真实输入检查一次输出。","为流程补上异常处理和人工接管规则，再观察团队试用效果。"]],["quality","把住质量与风险",["我能指出一个功能跑通后仍可能出现的隐患，以及它会怎样影响业务。","我用测试、监控或实验验证过关键判断，并确认风险已处理或得到控制。","我承担复杂技术决策时，评估过底层约束、替代方案及其风险。"],["对一项改动列出异常场景、影响范围和验证方法。","挑一个关键风险做验证，保留结果及剩余风险。","把关键约束、取舍和验证结论写进方案记录。"]],["improve","交付后持续改进",["我看过上线后的真实使用、运行数据或用户反馈，并据此判断了改进重点。","我实施过改进，也回看了结果，能说明原问题是否减少。","我对探索项目的去留负责时，依据阶段目标做过继续、调整或停止的判断。"],["选一个上线需求，回访使用者并核对运行情况。","给下一项改进约定复查时间和可比较的指标。","记录阶段目标、验证结果和下一步投入决定。"]],["team","扩大团队能力",["我把解决复杂问题的经验转化成他人能沿用的方法、规则、工具或指导。","我跟进过同事独立使用的情况，能指出它在哪项后续工作中产生了作用。","我对跨团队推广负责时，跟进过多个团队的持续采用及交付效果。"],["选一个反复出现的问题，整理方法并让同事实际试用。","回访一位使用者，记录真实采用情况及效果。","检查不同团队的使用记录和反馈，针对障碍改进方法。"]]];
+const choices=['已做到','部分做到','还没做到','不在职责内'];
+const box=document.querySelector('#checkwork');
+const answers={}, active=checks; let step=0;
+document.querySelector('#startCheck').onclick=()=>{
+  document.querySelector('#startArea').hidden=true;
+  draw();
+};function draw(){const [id,name,qs]=active[step];const prior=answers[id]||[];box.innerHTML='<h3 tabindex="-1">'+name+' · '+(step+1)+' / '+active.length+'</h3><p>回想最近一个相关项目，按自己实际做到的程度选择。</p><form id="questions">'+qs.map((q,i)=>'<fieldset><legend>'+q+'</legend>'+choices.map((c,j)=>'<label class="choice"><input required type="radio" name="q'+i+'" value="'+j+'" '+(prior[i]===j?'checked':'')+'>'+c+'</label>').join('')+'</fieldset>').join('')+(step?'<button type="button" id="prev" class="checkbtn">上一项</button> ':'')+'<button class="checkbtn">'+(step===active.length-1?'查看自查结果':'下一项')+'</button></form>';box.querySelector('h3').focus();const f=box.querySelector('form');function save(){answers[id]=qs.map((q,i)=>{const n=f.querySelector("input[name=q"+i+"]:checked");return n?Number(n.value):undefined;})}f.onchange=save;f.onsubmit=e=>{e.preventDefault();save();if(step+1===active.length)results();else{step++;draw()}};if(step)box.querySelector('#prev').onclick=()=>{save();step--;draw()};}
+const practiceGuides = {
+  "value": [
+    [
+      "下次接需求时，找一位实际使用者，请对方带你走一遍最费时或最易出错的步骤。",
+      "把已有反馈和需求对上：如果只解决其中一个痛点，哪个最值得投入？请需求方说明理由。",
+      "需求评审时，你和需求方能说清同一个目标，以及怎样判断它有改善。"
+    ],
+    [
+      "拿一个小需求，对照两种能达到目标的做法，各估一次投入和主要风险。",
+      "把已有备选方案带到评审，问清哪条约束决定了选择，什么变化会让团队改选。",
+      "方案敲定后，你能解释选它的原因，以及为此接受了什么代价。"
+    ],
+    [
+      "在下一次获授权的投入决策前，与相关方约定在哪个节点复查、什么情况下调整。",
+      "用最新反馈重新检查已有投入，提出继续、缩小范围或停止的建议，并推动决定。",
+      "到复查节点时，能按事先约定的条件作出并解释决定。"
+    ]
+  ],
+  "delivery": [
+    [
+      "接手下一项需求时，和使用方确认什么算完成，再找上下游各核对一次关键依赖。",
+      "挑一个仍模糊的交接点，和对方对齐输入、完成条件和异常联系人。",
+      "开工前，上下游能独立说出一致的验收条件。"
+    ],
+    [
+      "选一个刚交接的需求，跟到真实验收，看看用户能否完成原来的任务。",
+      "回到尚未确认的交付环节，和接手方把遗留问题跟到解决或明确接手。",
+      "验收时，你能说清目标是否达成，剩余事项由谁在何时处理。"
+    ],
+    [
+      "下次负责跨模块事项时，组织一次短对齐，让各模块各说一个依赖和一个验收条件。",
+      "找出目前责任最模糊的一处依赖，和双方约定接手人、联调时间和共同验收方式。",
+      "联调完成时，各模块能用同一个业务场景完成验收。"
+    ]
+  ],
+  "ai": [
+    [
+      "选一个可复核的小任务，先定质量要求，再把背景和约束交给 AI，比较耗时与返工。",
+      "挑一次常用的 AI 操作，补查自己还不清楚的一点：节省的时间是否被复核、返工抵消？",
+      "下一次同类任务开始前，你能判断是否值得用 AI，并说清理由。"
+    ],
+    [
+      "在一次真实任务中，用业务规则或独立测试核对 AI 输出，再试一个边界输入。",
+      "挑一个最易漏掉的输出错误，补上校验条件，约定何时退回给人处理。",
+      "遇到不合格输出时，能发现问题并在交付前修正或接管。"
+    ],
+    [
+      "把一个常用流程整理成同事可独立操作的步骤，让同事用真实任务试跑。",
+      "观察一次团队试用，找出最常需要人工介入的环节，补上接管说明再试。",
+      "下一次同类任务中，同事能独立运行，并知道遇到异常该怎么办。"
+    ]
+  ],
+  "quality": [
+    [
+      "从一个已跑通的功能入手，问如果输入异常或依赖变慢，谁会受影响，再实际试一种情况。",
+      "把已发现的技术隐患追到用户侧，确认受影响的场景、范围和优先级。",
+      "上线评审时，你能说清最值得先处理的风险及其业务后果。"
+    ],
+    [
+      "挑一个关键风险，先说明发生时会看到什么，再用测试或监控检查。",
+      "针对已处理的风险，补一次修复前后可比较的验证，并确认仍有哪些边界。",
+      "复测后，你能说明风险已控制到什么程度，以及还需观察什么。"
+    ],
+    [
+      "在一次技术决策中列出硬约束，挑两个可行方案，用小规模试验检验最大的不确定点。",
+      "对已有方案补问：哪条假设一旦错了，代价最大？优先验证这条假设。",
+      "评审时，你能说明关键约束如何影响选择，以及何时应重评方案。"
+    ]
+  ],
+  "improve": [
+    [
+      "选一个刚上线的功能，请使用者演示一次实际操作，再看同一环节的运行数据。",
+      "把已收集的问题按影响范围和严重程度比较，选出最值得先改的一项。",
+      "安排下一轮迭代时，你能说明为什么优先处理这个问题。"
+    ],
+    [
+      "为一个准备调整的问题定下观察指标和复查时间，改动前先看一次基线。",
+      "对已经上线的改动，用相同场景或口径回看；遇到数据不足，就约定下一次观察时间。",
+      "复查时，能说清原问题是否减少，还是仍需进一步观察。"
+    ],
+    [
+      "启动一个探索阶段前，与相关方约定目标和到期要做的决定。",
+      "到阶段节点时，对照目标和实际反馈，提出下一轮投入或调整方案。",
+      "复盘后，后续排期或投入能体现这次判断。"
+    ]
+  ],
+  "team": [
+    [
+      "选一个同事反复来问的问题，把你的判断步骤教给一位同事，让对方在下一次任务里自己试。",
+      "请同事用已有方法走一遍，只观察在哪一步还需要你解释，针对那一步改写说明。",
+      "下次遇到同类问题时，同事能自行判断并完成关键步骤。"
+    ],
+    [
+      "找一位用过你方法的同事，请对方带你回看最近一次使用：哪一步用上了，哪里还需要帮忙？",
+      "如果已知道有人用过，再追问：它帮你完成了哪一步？哪一步仍要自己摸索？据此调整方法。",
+      "下一次使用后，你能说出这套方法帮到了哪项具体工作，以及哪里还需要改。"
+    ],
+    [
+      "在负责推广的范围内，找两个使用场景不同的团队各试一次，了解各自的使用条件。",
+      "回访已试用的团队，确认下一次是否继续采用，以及交付中哪一步变容易或变困难。",
+      "下一轮项目中，你能说明哪些团队持续使用、产生什么作用、哪些场景需要调整。"
+    ]
+  ]
+};
+function practiceCard(id, index, answer) {
+  if (answer !== 1 && answer !== 2) return '';
+  const [start, extend, review] = practiceGuides[id][index];
+  return '<details class="practice"><summary>查看这项行为的提升指引</summary><p><b>' +
+    (answer === 1 ? '把已有实践做完整' : '第一次可以这样做') + '</b>　' +
+    (answer === 1 ? extend : start) + '</p><p><b>何时再自查</b>　' + review + '</p></details>';
+}
+
+
+function scoreOf(values) {
+  const used = values.filter(value => value !== 3);
+  const points = used.reduce((sum,value) => sum + (2 - value), 0);
+  return { count: used.length, percent: used.length ? Math.round(100 * points / (2 * used.length)) : null };
+}
+const behaviorNames = {
+  value:['说明需求价值','比较方案并说明取舍','判断何时调整投入'],
+  delivery:['明确验收条件和依赖','跟进交接直至验收','协调跨模块交付'],
+  ai:['选择适合 AI 的任务','核验输出并处理异常','推动团队采用协作流程'],
+  quality:['识别隐患和业务影响','验证风险是否受控','评估技术方案的约束'],
+  improve:['根据反馈确定改进重点','复查改进效果','根据阶段目标调整投入'],
+  team:['把经验教给同事','跟进方法的实际使用','了解跨团队采用效果']
+};
+const behaviorImpact = {
+  "value": [
+    "明确受益人和业务目标，有助于判断这项需求值得投入多少。",
+    "把备选方案放在一起比较，团队才能看清选择一种做法要承担的代价。",
+    "提前约定调整投入的条件，阶段反馈才能真正影响后续排期。"
+  ],
+  "delivery": [
+    "如果验收条件和依赖没有对齐，各方可能都完成了自己的任务，最后却交不出同一个结果。",
+    "交接之后持续跟进，才能确认使用方真的解决了原来的问题。",
+    "跨模块的共同验收能找出单个模块测试覆盖不到的衔接问题。"
+  ],
+  "ai": [
+    "先明确适用范围，才能判断 AI 节省的时间是否被复核和返工抵消。",
+    "可独立核验的判断依据能帮你在错误进入交付前及时接手。",
+    "明确人工接管条件，其他人才能在不同任务里可靠地沿用这套做法。"
+  ],
+  "quality": [
+    "把技术隐患关联到真实使用场景，有助于先处理后果最重的问题。",
+    "复现和复测让你知道修复是否控制了原风险，以及还要观察什么。",
+    "检验方案背后的关键假设，有助于避免把成本押在未经验证的约束上。"
+  ],
+  "improve": [
+    "了解实际使用情况，能帮助团队决定先修哪个问题。",
+    "前后用同一口径回看，才能区分发布了改动和用户体验确有改善。",
+    "按阶段目标回顾投入，有助于及时调整方向或停止低价值工作。"
+  ],
+  "team": [
+    "让同事实际试用，有助于找出哪些判断仍只有你自己会做。",
+    "了解方法被用在哪一步，才能判断它是否真正帮助同事独立完成工作。",
+    "比较不同团队的后续使用，能找出方法适用的边界和推广障碍。"
+  ]
+};
+function results() {
+  const rows = active.map(([id,name,questions]) => ({
+    id, name, questions, values: answers[id], ...scoreOf(answers[id])
+  }));
+  const overall = scoreOf(rows.flatMap(row => row.values));
+  const initial = [...rows].sort((a,b)=>(a.percent ?? 101)-(b.percent ?? 101))[0];
+  const gapsOf = row => row.values.map((v,i)=>({v,i})).filter(g=>g.v===1||g.v===2).sort((a,b)=>b.v-a.v);
+  const pending = rows.filter(r=>gapsOf(r).length).sort((a,b)=>a.percent-b.percent);
+  const overview = pending.length ? '<section class="growth"><h4>本次提升清单</h4>'+
+    pending.map(r=>'<button type="button" class="growthrow" data-focus="'+r.id+'"><span><b>'+r.name+'</b> · '+r.percent+' 分'+(r.percent===pending[0].percent?' <em>优先练习</em>':'')+'</span><small>'+gapsOf(r).map(g=>behaviorNames[r.id][g.i]).join('、')+'</small></button>').join('')+'</section>' : '';
+  const bars = rows.map(row => {
+    const label = row.percent === null ? '未计分' : row.percent + ' 分';
+    return '<button type="button" class="barrow" data-row="'+row.id+'" aria-controls="reading"><span>'+row.name+'</span><span class="track" aria-hidden="true"><i style="width:'+(row.percent ?? 0)+'%"></i></span><strong>'+label+'</strong></button>';
+  }).join('');
+  box.innerHTML = '<div class="scorecard"><h3 tabindex="-1">我的能力体检单</h3><div class="scorehead"><div><small>'+
+    (rows.length===1?rows[0].name+' · 自评分':'本次综合自评分')+'</small><div class="bigscore">'+
+    (overall.percent===null?'—':overall.percent)+'<small> / 100</small></div></div><p>'+
+    (overall.count?'本次有 '+overall.count+' 道适用题<br>覆盖 '+rows.filter(row=>row.count).length+' 项能力':'所选题目均不在职责内<br>本次未计分')+
+    '</p></div><h4>各项能力得分'+(rows.length>1?' <small>点选查看解读</small>':'')+'</h4>'+bars+overview+
+    '<div id="reading" aria-live="polite"></div><details class="scoremethod"><summary>分数怎么算？</summary><p>已做到 2 分，部分做到 1 分，还没做到 0 分。不在职责内的题跳过。实得分除以适用题满分，换算成百分制并四舍五入。综合分按全部适用题计算。</p></details><button type="button" id="review" class="checkbtn">回看答案</button></div>';
+  function show(row){
+    const names=behaviorNames[row.id], gaps=gapsOf(row);
+    const strengths=names.filter((_,i)=>row.values[i]===0);
+    const summary=!row.count?'这次选择的行为都在你的职责范围之外，本项跳过。':
+      '本次适用 '+row.count+' 项行为，'+strengths.length+' 项已做到'+(strengths.length?'（'+strengths.join('、')+'）':'')+'。'+
+      [2,1].map(v=>{const n=gaps.filter(g=>g.v===v).length;return n?n+' 项'+choices[v]:''}).filter(Boolean).join('，')+(gaps.length?'。':'');
+    const action=gaps.map(({v,i})=>{
+      const guide=practiceGuides[row.id][i];
+      return '<div class="stepguide"><h5>'+names[i]+' <small>'+choices[v]+'</small></h5><p>'+behaviorImpact[row.id][i]+'</p>'+
+        '<p><b>下次试试</b>　'+guide[v===2?0:1]+'</p><p><b>复查时看</b>　'+guide[2]+'</p></div>';
+    }).join('');
+    const detail=row.questions.map((q,i)=>'<li><b>'+choices[row.values[i]]+'</b><span>'+q+'</span></li>').join('');
+    box.querySelector('#reading').innerHTML='<div class="insight"><h4>'+row.name+' · '+(row.percent===null?'未计分':row.percent+' 分')+'</h4><p class="verdict">'+summary+'</p>'+action+
+    '<details class="answerlist"><summary>查看答题明细</summary><ul>'+detail+'</ul><a href="#'+row.id+'">对照能力标准</a></details></div>';
+    box.querySelectorAll('[data-row]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.row===row.id)));
+  }
+  box.querySelectorAll('[data-row]').forEach((b,i)=>b.onclick=()=>show(rows[i]));
+  box.querySelectorAll('[data-focus]').forEach(b=>b.onclick=()=>{
+    show(rows.find(r=>r.id===b.dataset.focus));
+    box.querySelector('#reading').scrollIntoView({block:'start'});
+  });
+  show(initial);
+  box.querySelector('h3').focus();
+  box.querySelector('#review').onclick=()=>{step=0;draw()};
+}
+
+</script></main></body></html>
